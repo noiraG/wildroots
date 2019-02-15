@@ -1,0 +1,536 @@
+.soil-container {
+  max-width: 1000px;
+  max-height: 500px;
+  border: 20px solid black;
+  border-radius: 10px;
+  cursor: grab;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;  // Safari and Chrome
+  }
+}
+
+.visual-map {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  background-color: grey;
+
+  &_lawn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1000px;
+    margin: auto auto 0 0;
+  }
+
+  &_norris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 300px;
+    background-color: #E9DED2;
+    border: 5px solid #BB9973;
+    border-right: 0;
+    border-bottom: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: large;
+    color: #BB9973;
+  }
+
+  &_crate1 {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate2 {
+    position: absolute;
+    left: 35px;
+    top: 130px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate3 {
+    position: absolute;
+    left: 55px;
+    top: 175px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate4 {
+    position: absolute;
+    left: 100px;
+    top: 70px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate5 {
+    position: absolute;
+    left: 120px;
+    top: 115px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate6 {
+    position: absolute;
+    left: 140px;
+    top: 140px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate7 {
+    position: absolute;
+    left: 140px;
+    top: 350px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate8 {
+    position: absolute;
+    left: 185px;
+    top: 350px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate9 {
+    position: absolute;
+    left: 230px;
+    top: 250px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate10 {
+    position: absolute;
+    left: 275px;
+    top: 250px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate11 {
+    position: absolute;
+    left: 250px;
+    top: 295px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate12 {
+    position: absolute;
+    left: 300px;
+    top: 120px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate13 {
+    position: absolute;
+    left: 300px;
+    top: 360px;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate14 {
+    position: absolute;
+    left: 350px;
+    top: 355px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate15 {
+    position: absolute;
+    left: 370px;
+    top: 380px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate16 {
+    position: absolute;
+    left: 360px;
+    top: 220px;
+    width: 70px;
+    height: 35px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate17 {
+    position: absolute;
+    left: 380px;
+    top: 165px;
+    width: 50px;
+    height: 20px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate18 {
+    position: absolute;
+    left: 370px;
+    top: 55px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate19 {
+    position: absolute;
+    left: 430px;
+    top: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate20 {
+    position: absolute;
+    left: 500px;
+    top: 45px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate21 {
+    position: absolute;
+    left: 560px;
+    top: 45px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate22 {
+    position: absolute;
+    left: 520px;
+    top: 90px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate23 {
+    position: absolute;
+    left: 510px;
+    top: 210px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate24 {
+    position: absolute;
+    left: 510px;
+    top: 280px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate25 {
+    position: absolute;
+    left: 550px;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate26 {
+    position: absolute;
+    left: 580px;
+    top: 210px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate27 {
+    position: absolute;
+    left: 580px;
+    top: 280px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate28 {
+    position: absolute;
+    left: 660px;
+    top: 60px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate29 {
+    position: absolute;
+    left: 690px;
+    top: 85px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate30 {
+    position: absolute;
+    left: 670px;
+    top: 250px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate31 {
+    position: absolute;
+    left: 735px;
+    top: 240px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &_crate32 {
+    position: absolute;
+    left: 735px;
+    top: 300px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_crate33 {
+    position: absolute;
+    left: 790px;
+    top: 250px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_crate34 {
+    position: absolute;
+    left: 830px;
+    top: 290px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_crate35 {
+    position: absolute;
+    left: 820px;
+    top: 190px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_crate36 {
+    position: absolute;
+    left: 790px;
+    top: 30px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_crate37 {
+    position: absolute;
+    left: 850px;
+    top: 40px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_crate38 {
+    position: absolute;
+    left: 895px;
+    top: 300px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_crate39 {
+    position: absolute;
+    left: 895px;
+    top: 360px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &_crate40 {
+    position: absolute;
+    left: 870px;
+    top: 380px;
+    width: 60px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+
+}
